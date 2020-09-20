@@ -5,8 +5,8 @@ The application is deployed here
 <a href="https://videosummary12.herokuapp.com/">Basic Video Summarizer</a>
 
 ## To run
-1)Create new environemt (conda create ...)
-2)Install packages (pip install requirement.txt)
-3)Go to current directy of repo
-4)run command "streamlit run app.py"
+<ol><li>Create new environemt (conda create ...)</li><li>
+Install packages (pip install requirement.txt)</li><li>
+Go to current directy of repo</li><li>
+Run command "streamlit run app.py"</li><li></ol>
 

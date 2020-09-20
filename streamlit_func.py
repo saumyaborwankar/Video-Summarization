@@ -79,16 +79,15 @@ def Generate_summary():
         ffmpeg_extract_subclip(video_path,start_lim,end_lim,targetname=filename)
     video=[]
     j=0
-    a=[]
-    for file in os.listdir('output/temp'):
-        if file.endswith(".mp4"):
-            a.append(int(file.split(".")[0])
-            for files in sorted(a):
-                print(files)
-                video_temp=VideoFileClip(os.path.join('output/temp',"{}.mp4".format(files)))
-                video.append(video_temp)
-    print(len(video))
-    print("----------------------------------------------")
+    for dir,sub,file in os.walk('output/temp'):
+        for files in file:
+            if files.endswith(".mp4"):
+                a.append(int(files.split(".")[0]))
+                #print(sorted(a))
+                for fil in sorted(a):
+                    print(fil)
+                    video_temp=VideoFileClip(os.path.join(dir,"{}.mp4".format(fil)))
+                    video.append(video_temp)
     final_video= concatenate_videoclips(video)
     final_video.write_videofile("output/video/final_video.mp4")
     clear_file("output/temp/")

@@ -8,5 +8,5 @@ The application is deployed here
 <ol><li>Create new environemt (conda create ...)</li><li>
 Install packages (pip install requirement.txt)</li><li>
 Go to current directy of repo</li><li>
-Run command "streamlit run app.py"</li><li></ol>
+Run command "streamlit run app.py"</li></ol>
 

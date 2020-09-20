@@ -85,7 +85,7 @@ def Generate_summary():
             a.append(int(file.split(".")[0])
             for files in sorted(a):
                 print(files)
-                video_temp=VideoFileClip(os.path.join(dir,"{}.mp4".format(files)))
+                video_temp=VideoFileClip(os.path.join('output/temp',"{}.mp4".format(files)))
                 video.append(video_temp)
     print(len(video))
     print("----------------------------------------------")

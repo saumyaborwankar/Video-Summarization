@@ -80,7 +80,7 @@ def Generate_summary():
     video=[]
     j=0
     for dir,sub,file in os.walk('output/temp'):
-        a=[int(i.split(".")[0]) for i in file]
+        a=[int(float(i.split(".")[0])) for i in file]
         #print(sorted(a))
         for files in sorted(a):
             print(files)

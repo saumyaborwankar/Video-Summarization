@@ -36,7 +36,7 @@ if page == "App":
     #check_data = st.checkbox("Generate summary")
         VideoToAudio(temporary_location)
         ShowAudio('output/sample.wav')
-        #Generate_summary()
-        #ShowVideo("output/video/final_video.mp4")
+        Generate_summary()
+        ShowVideo("output/video/final_video.mp4")
 
         

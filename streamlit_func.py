@@ -79,6 +79,7 @@ def Generate_summary():
         ffmpeg_extract_subclip(video_path,start_lim,end_lim,targetname=filename)
     video=[]
     j=0
+    a=[]
     for dir,sub,file in os.walk('output/temp'):
         for files in file:
             if files.endswith(".mp4"):
